@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-var up, down, left, right, vel_h, vel_v;
+var up, down, left, right, vel_h, vel_v, deslize;
 
 up = keyboard_check(vk_up);
 down = keyboard_check(vk_down);
@@ -11,8 +11,14 @@ right = keyboard_check(vk_right);
 vel_h = (right - left) * vel; // velocidade destino
 vel_v = (down - up) * vel; // velocidade destion
 
-velh = lerp(velh, vel_h, .1);
-velv = lerp(velv, vel_v, .1);
+deslize = des_n;
+if (place_meeting(x, y, obj_ice))
+{
+	deslize = des_g;
+}
+
+velh = lerp(velh, vel_h, deslize);
+velv = lerp(velv, vel_v, deslize);
 
 if (place_meeting(x + velh, y, obj_block))
 {
