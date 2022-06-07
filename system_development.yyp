@@ -1,6 +1,8 @@
 {
   "resources": [
+    {"id":{"name":"rm_state_machine","path":"rooms/rm_state_machine/rm_state_machine.yy",},"order":2,},
     {"id":{"name":"obj_rampa","path":"objects/obj_rampa/obj_rampa.yy",},"order":6,},
+    {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":7,},
     {"id":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},"order":1,},
     {"id":{"name":"obj_ice","path":"objects/obj_ice/obj_ice.yy",},"order":2,},
     {"id":{"name":"spr_ice","path":"sprites/spr_ice/spr_ice.yy",},"order":2,},
@@ -26,6 +28,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"rm_state_machine","path":"rooms/rm_state_machine/rm_state_machine.yy",},},
     {"roomId":{"name":"rm_platformer","path":"rooms/rm_platformer/rm_platformer.yy",},},
     {"roomId":{"name":"rm_top_down","path":"rooms/rm_top_down/rm_top_down.yy",},},
   ],
