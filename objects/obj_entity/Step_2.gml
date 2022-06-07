@@ -3,6 +3,20 @@
 
 repeat(abs(velh))
 {
+	if (place_meeting(x + sign(velh), y, obj_block_plat) && !place_meeting(x + sign(velh), y - 1, obj_block_plat))
+	{
+		y--;
+	}
+	
+	if (
+		!place_meeting(x + sign(velh), y, obj_block_plat) &&
+		!place_meeting(x + sign(velh), y + 1, obj_block_plat) &&
+		place_meeting(x + sign(velh), y + 2, obj_block_plat))
+	{
+		show_debug_message("to aqui");
+		y++
+	}
+	
 	if (!place_meeting(x + sign(velh), y, obj_block_plat))
 	{
 		x += sign(velh);

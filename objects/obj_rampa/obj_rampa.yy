@@ -1,19 +1,18 @@
 {
-  "name": "obj_rampa",
   "spriteId": {
     "name": "spr_rampa",
     "path": "sprites/spr_rampa/spr_rampa.yy",
   },
-  "spriteMaskId": null,
-  "visible": true,
   "solid": false,
-  "persistent": false,
-  "physicsObject": false,
+  "visible": true,
   "managed": true,
+  "spriteMaskId": null,
+  "persistent": false,
   "parentObjectId": {
     "name": "obj_block_plat",
     "path": "objects/obj_block_plat/obj_block_plat.yy",
   },
+  "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 1,
@@ -33,6 +32,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
+  "name": "obj_rampa",
   "tags": [],
   "resourceType": "GMObject",
 }
