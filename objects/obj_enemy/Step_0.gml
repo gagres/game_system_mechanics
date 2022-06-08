@@ -46,6 +46,8 @@ switch(state)
 		}
 		break;
 	case "chase":
+		image_blend = c_yellow;
+		var attack_player = collision_circle(x, y, area_attack, obj_player, false, true);
 		if (dist > area_chase)
 		{
 			state = "idle";
@@ -56,6 +58,21 @@ switch(state)
 			x += lengthdir_x(2, dir);
 			y += lengthdir_y(2, dir);
 		}
+		if (attack_player)
+		{
+			state = "attack"
+		}
+		break;
+	case "attack":
+		x += lengthdir_x(7, dir);
+		y += lengthdir_y(7, dir);
+		image_blend = c_red;
+		if (timer_attack <= 0)
+		{
+			state = "idle";
+			timer_attack = room_speed / 4;
+		}
+		timer_attack--;
 		break;
 }
 
